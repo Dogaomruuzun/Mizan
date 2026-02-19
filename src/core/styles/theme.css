@@ -40,7 +40,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* TRT Colors */
+
   --trt-black: #1a1a1a;
   --trt-red: #ff0000;
   --trt-white: #ffffff;
@@ -128,7 +128,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* TRT Colors */
+
   --color-trt-black: var(--trt-black);
   --color-trt-red: var(--trt-red);
   --color-trt-white: var(--trt-white);
@@ -148,10 +148,6 @@
     font-family: Arial, Helvetica, sans-serif !important;
   }
 
-  /**
-  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
-  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
-  */
 
   html {
     font-size: var(--font-size);
@@ -198,4 +194,5 @@
     font-weight: var(--font-weight-normal);
     line-height: 1.5;
   }
+
 }

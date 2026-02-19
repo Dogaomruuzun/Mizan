@@ -15,7 +15,7 @@ export function RequestResponseExample() {
     return (
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
 
-            {/* REQUEST */}
+
             <div className="bg-white dark:bg-[#0b0d11] border border-gray-200 dark:border-gray-800 rounded-xl">
 
                 <div className="flex justify-between items-center px-5 py-3 border-b border-gray-200 dark:border-gray-800">
@@ -40,7 +40,7 @@ export function RequestResponseExample() {
             </div>
 
 
-            {/* RESPONSE */}
+
             <div className="bg-white dark:bg-[#0b0d11] border border-gray-200 dark:border-gray-800 rounded-xl">
 
                 <div className="flex justify-between items-center px-5 py-3 border-b border-gray-200 dark:border-gray-800">

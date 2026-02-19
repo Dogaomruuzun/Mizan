@@ -1,4 +1,4 @@
-// src/presentation/routes.tsx
+
 import { createBrowserRouter } from "react-router";
 import { Layout } from "./components/Layout";
 import { AnalyzerPage } from "./pages/AnalyzerPage";

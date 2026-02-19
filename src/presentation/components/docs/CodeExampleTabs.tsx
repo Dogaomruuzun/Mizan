@@ -26,15 +26,11 @@ export function CodeExampleTabs() {
                     >
                         {value.label}
                     </button>
-
                 ))}
-
             </div>
 
-
-            {/* Code */}
             <pre className="p-5 text-[13px] font-mono text-gray-800 dark:text-gray-300 overflow-x-auto">
-{examples[tab].code}
+              {examples[tab].code}
             </pre>
 
         </div>

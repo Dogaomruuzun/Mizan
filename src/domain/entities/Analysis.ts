@@ -1,7 +1,6 @@
-export type AnalysisStatus = "DOĞRU" | "YANLIŞ";
-
 export interface AnalysisResponse {
-    result: AnalysisStatus;
-    score?: number;
-    timestamp?: string;
+    result: string;
+    score: number;
+    timestamp: string;
+    feedback?: 'up' | 'down' | null; // Beğeni durumu için alan ekledik
 }

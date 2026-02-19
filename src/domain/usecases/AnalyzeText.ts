@@ -1,3 +1,4 @@
+
 import { AnalysisResponse } from "../entities/Analysis";
 
 export class AnalyzeTextUseCase {
@@ -8,13 +9,13 @@ export class AnalyzeTextUseCase {
 
         return new Promise((resolve) => {
             setTimeout(() => {
-                const isTrue = Math.random() > 0.5;
                 resolve({
-                    result: isTrue ? "DOĞRU" : "YANLIŞ",
-                    score: Math.random(),
-                    timestamp: new Date().toISOString()
+                    result: text,
+                    score: 1.0,
+                    timestamp: new Date().toISOString(),
+                    feedback: null // Başlangıçta beğeni yok
                 });
-            }, 1000);
+            }, 600);
         });
     }
 }
