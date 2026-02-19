@@ -55,13 +55,13 @@ Gemini şunu dedi:
 Aşağıdaki bloğu kopyalayıp doğrudan README.md dosyanın içine yapıştırabilirsin. Tüm teknik detayları ve mimari derinliği profesyonel bir formatta hazırladım:
 
 Markdown
-# ⚖️ Mizan - Metin Analiz Platformu
+#  Mizan - Metin Analiz Platformu
 
 **Mizan**, gelişmiş yazılım mimarisi prensipleriyle (Clean Architecture) inşa edilmiş, metin doğruluk analizi ve bilgi kontrolü sağlayan modern bir web platformudur. TRT Bilgi Teknolojileri standartları göz önünde bulundurularak, performanslı ve ölçeklenebilir bir yapıda tasarlanmıştır.
 
 ---
 
-## 🏗️ Yazılım Mimarisi (Clean Architecture)
+## Yazılım Mimarisi (Clean Architecture)
 
 Bu proje, kodun sürdürülebilirliğini ve test edilebilirliğini en üst düzeye çıkarmak için **Clean Architecture** prensiplerine göre yapılandırılmıştır. Katmanlar arası bağımlılıklar "içeriye doğru" (Domain'e doğru) tasarlanarak UI değişimlerinden etkilenmeyen bir çekirdek oluşturulmuştur:
 
@@ -71,7 +71,7 @@ Bu proje, kodun sürdürülebilirliğini ve test edilebilirliğini en üst düze
 
 ---
 
-## 🚀 Öne Çıkan Özellikler
+##  Öne Çıkan Özellikler
 
 * **Gelişmiş Metin Analizi:** Metinleri hızlı ve etkili bir şekilde analiz eden modüler yapı.
 * **Karanlık Mod Desteği:** `ThemeContext` ile yönetilen, sistem tercihlerine duyarlı arayüz.
@@ -80,7 +80,7 @@ Bu proje, kodun sürdürülebilirliğini ve test edilebilirliğini en üst düze
 
 ---
 
-## 🛠️ Teknoloji Yığını
+## Kullanılan Teknolojiler
 
 * **Framework:** React 19 (Vite)
 * **Dil:** TypeScript
