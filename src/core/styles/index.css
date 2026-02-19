@@ -1,3 +1,12 @@
-@import './tailwind.css';
-@import './theme.css';
-@import '../app/components/styles/index.css';
+/* Tailwind v4 çekirdeği */
+@import "tailwindcss";
+
+/* 1. Temel Değişkenler ve Tema (src/core/styles/theme.css) */
+@import "./theme.css";
+
+/* 2. Bileşen Stilleri (src/core/styles/components/index.css) */
+/* Dikkat: Klasör yapına göre yolun doğru olduğundan emin ol */
+@import "./components/index.css";
+
+/* Tailwind v4 için kaynak tarama */
+@source "../**/*.{js,ts,jsx,tsx}";
