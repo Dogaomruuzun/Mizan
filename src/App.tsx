@@ -1,5 +1,5 @@
 import { RouterProvider } from 'react-router';
-import { ThemeProvider } from './contexts/ThemeContext';
+import { ThemeProvider } from '../core/contexts/ThemeContext';
 import { router } from './routes';
 import '../styles/index.css';
 
