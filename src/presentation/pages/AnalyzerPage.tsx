@@ -8,7 +8,7 @@ export function AnalyzerPage() {
 
     return (
         <div className="split-layout">
-            {/* Sol Panel: Giriş */}
+
             <div className="panel panel-surface">
                 <label className="text-base font-semibold text-foreground mb-2">Metin Girişi</label>
                 <textarea
@@ -25,8 +25,6 @@ export function AnalyzerPage() {
                 </div>
             </div>
 
-
-
             <div className="panel panel-surface">
                 <label className="text-base font-semibold text-foreground mb-2">Analiz Sonucu</label>
                 <div className="relative flex-1 w-full rounded-lg border border-border bg-white dark:bg-black overflow-hidden flex items-center justify-center">
@@ -41,7 +39,6 @@ export function AnalyzerPage() {
                     )}
                 </div>
 
-                {/* Alt Bilgi Alanı */}
                 <div className="mt-2 text-xs text-gray-600 dark:text-gray-400">
                     {output ? "Analiz başarıyla tamamlandı" : "Henüz analiz yapılmadı"}
                 </div>

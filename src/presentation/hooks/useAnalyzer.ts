@@ -1,5 +1,4 @@
-// src/presentation/hooks/useAnalyzer.ts
-import { useState, useMemo } from "react"; // 1. useMemo ekledik
+import { useState, useMemo } from "react";
 import { AnalyzeTextUseCase } from "../../domain/usecases/AnalyzeText";
 import { AnalysisStatus } from "../../domain/entities/Analysis";
 
@@ -15,14 +14,12 @@ export function useAnalyzer() {
         if (!input.trim() || isAnalyzing) return;
 
         setIsAnalyzing(true);
-        // İsteğe bağlı: Yeni analiz başlarken eski sonucu temizlemek istersen:
-        // setOutput("");
 
         try {
             const response = await analyzeUseCase.execute(input);
             setOutput(response.result);
         } catch (error) {
-            // Kullanıcıya hata göstermek istersen buraya bir error state'i de eklenebilir
+
             console.error("Analiz hatası:", error);
         } finally {
             setIsAnalyzing(false);

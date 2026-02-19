@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Outlet, Link, useLocation } from "react-router";
 import { Menu, Moon, Sun, X } from "lucide-react";
@@ -40,7 +39,7 @@ export function Layout() {
             <header className="app-header">
                 <div className="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
 
-                    {/* Sol Kısım: Logo ve Masaüstü Nav */}
+
                     <div className="flex items-center gap-8">
                         <Link to="/" className="text-2xl font-bold hover:text-trt-red transition-colors">
                             Mizan
@@ -50,7 +49,7 @@ export function Layout() {
                         </nav>
                     </div>
 
-                    {/* Sağ Kısım: Tema ve Mobil Buton */}
+
                     <div className="flex items-center gap-4">
                         <ThemeToggleButton isDark={isDark} onToggle={toggleTheme} />
 
@@ -63,7 +62,6 @@ export function Layout() {
                     </div>
                 </div>
 
-                {/* Mobil Dropdown */}
                 {mobileMenuOpen && (
                     <div className="md:hidden border-t border-border bg-card">
                         <nav className="flex flex-col p-4 gap-3">
@@ -84,7 +82,6 @@ export function Layout() {
     );
 }
 
-// Alt Bileşen: Tema Butonu (Okunabilirliği artırmak için dışarı aldık)
 function ThemeToggleButton({ isDark, onToggle }: { isDark: boolean, onToggle: () => void }) {
     return (
         <button
