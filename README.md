@@ -37,18 +37,20 @@ Bu proje, kodun sürdürülebilirliğini ve test edilebilirliğini en üst düze
 
 
 src/
-├── core/           # Tema yönetimi, global stiller ve sabitler
-│   ├── contexts/   # ThemeContext (Dark/Light mode)
-│   ├── styles/     # Tailwind v4 & Component stilleri
-│   └── constants/  # Navigasyon ve API sabitleri
-├── domain/         # İş mantığı (Business Logic)
-│   ├── entities/   # Analiz veri modelleri
-│   └── usecases/   # AnalyzeText fonksiyonel kuralları
-├── presentation/   # UI Katmanı
-│   ├── components/ # Ortak bileşenler (Layout, Footer)
-│   ├── hooks/      # useAnalyzer (Logic-UI köprüsü)
-│   └── pages/      # AnalyzerPage, HowToUsePage
-└── App.tsx         # Uygulama ana giriş noktası
+├── core/                   # Uygulama genelindeki altyapı
+│   ├── constants/          # Navigasyon ve API sabitleri
+│   ├── contexts/           # Global State (ThemeContext vb.)
+│   └── styles/             # Tailwind v4 ve global CSS yapılandırması
+│       └── components/     # Bileşen bazlı özel stiller
+├── domain/                 # Saf İş Mantığı (React'ten bağımsız)
+│   ├── entities/           # Veri modelleri ve tip tanımlamaları
+│   └── usecases/           # Uygulama senaryoları (AnalyzeText vb.)
+├── presentation/           # Kullanıcı Arayüzü (UI)
+│   ├── components/         # Ortak UI bileşenleri (Layout, Footer)
+│   ├── hooks/              # UI ve Logic arasındaki köprü (useAnalyzer)
+│   └── pages/              # Uygulama sayfaları (Analyzer, HowToUse)
+├── App.tsx                 # Uygulama ana giriş noktası
+└── main.tsx                # React DOM render başlangıcı
 
 ---
 ## Kurulum ve Çalıştırma
