@@ -1,8 +1,13 @@
-
-import { createBrowserRouter } from "react-router";
+// src/presentation/routes.tsx
+import { createBrowserRouter, Navigate } from "react-router";
 import { Layout } from "./components/Layout";
 import { AnalyzerPage } from "./pages/AnalyzerPage";
-import { HowToUsePage } from "./pages/HowToUsePage";
+import { DocsLayout } from "./pages/docs/DocsLayout";
+import { AboutSection } from "./pages/docs/AboutSection";
+import { AuthenticationSection } from "./pages/docs/AuthenticationSection";
+import { ErrorsSection } from "./pages/docs/ErrorsSection";
+import { MetadataSection } from "./pages/docs/MetadataSection";
+import { VersioningSection } from "./pages/docs/VersioningSection";
 
 export const router = createBrowserRouter([
     {
@@ -11,11 +16,18 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                Component: AnalyzerPage
+                Component: AnalyzerPage,
             },
             {
                 path: "how-to-use",
-                Component: HowToUsePage
+                Component: DocsLayout,
+                children: [
+                    { index: true, Component: AboutSection },
+                    { path: "authentication", Component: AuthenticationSection },
+                    { path: "errors", Component: ErrorsSection },
+                    { path: "metadata", Component: MetadataSection },
+                    { path: "versioning", Component: VersioningSection },
+                ],
             },
         ],
     },

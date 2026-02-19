@@ -201,3 +201,80 @@
 .dark .mini-card:hover {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
 }
+
+/* ========== Docs Layout ========== */
+.docs-layout {
+  display: flex;
+  min-height: calc(100vh - 110px);
+}
+
+.docs-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 60px;
+  height: calc(100vh - 110px);
+  overflow-y: auto;
+  border-right: 1px solid var(--border);
+  background-color: #fafafa;
+  transition: background-color 0.3s;
+}
+
+.dark .docs-sidebar {
+  background-color: #111318;
+}
+
+.docs-content {
+  flex: 1;
+  min-width: 0;
+  padding: 2.5rem 3rem;
+  overflow-y: auto;
+}
+
+.docs-section {
+  max-width: 900px;
+}
+
+/* Mobile docs nav */
+.docs-mobile-nav {
+  position: sticky;
+  top: 60px;
+  z-index: 50;
+  background-color: white;
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.3s;
+}
+
+.dark .docs-mobile-nav {
+  background-color: #111318;
+}
+
+/* Hide scrollbar for mobile nav */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Docs sidebar custom scrollbar */
+.docs-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+.docs-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.docs-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.dark .docs-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 767px) {
+  .docs-content {
+    padding: 1.5rem 1rem;
+  }
+}
