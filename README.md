@@ -33,9 +33,19 @@ Bu proje, kodun sürdürülebilirliğini ve test edilebilirliğini en üst düze
 
 ---
 
-## 📂 Proje Yapısı
+## Kurulum ve Çalıştırma
+Repoyu klonlayın:
 
+git clone [https://github.com/Dogaomruuzun/Mizan.git](https://github.com/Dogaomruuzun/Mizan.git)
+Bağımlılıkları yükleyin:
 
+npm install
+Geliştirme sunucusunu başlatın:
+npm run dev
+
+### 📂 Proje Yapısı
+
+```text
 src/
 ├── core/                   # Uygulama genelindeki altyapı
 │   ├── constants/          # Navigasyon ve API sabitleri
@@ -52,14 +62,4 @@ src/
 ├── App.tsx                 # Uygulama ana giriş noktası
 └── main.tsx                # React DOM render başlangıcı
 
----
-## Kurulum ve Çalıştırma
-Repoyu klonlayın:
 
-git clone [https://github.com/Dogaomruuzun/Mizan.git](https://github.com/Dogaomruuzun/Mizan.git)
-Bağımlılıkları yükleyin:
-
-npm install
-Geliştirme sunucusunu başlatın:
-
-npm run dev
