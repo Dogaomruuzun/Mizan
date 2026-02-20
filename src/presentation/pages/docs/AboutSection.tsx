@@ -12,8 +12,7 @@ export function AboutSection() {
                     Mizan Servisi Hakkında
                 </h1>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
-                    Bu sayfada servis bilgisi ve amacı yer almaktadır. Mizan, dikte veya yazım dili hatalarını
-                    bir dil modeline bağlanarak düzelten yapay zeka destekli bir servistir.
+                    Mizan, TRT (Türkiye Radyo ve Televizyon Kurumu) Bilgi Teknolojileri Dairesi Başkanlığı tarafından geliştirilen yapay zeka destekli bir metin düzeltme servisidir. İngilizce metinlerin yüksek doğrulukla düzeltilmesi için tasarlanmıştır; orijinal anlamı veya yapıyı değiştirmeden hataları düzeltir. Bu sayfada servis bilgisi ve amacı yer almaktadır.
                 </p>
             </div>
 
